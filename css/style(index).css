@@ -1011,12 +1011,12 @@ font-family: 'Nanum Gothic', sans-serif; 설명, 작은글씨
      
 }
     #header .nav_m img {
-    position: absolute; top: 30px; left: 50%;
-    width: 100px;
+    position: absolute; top: 15px; left: 50%;
+    width: 80px;
     transform: translate(-50%, 0%);
     }
-    #header .nav_m .btn {position: absolute; top: 5px; right: 10%;}
-    #header .nav_m .btn img {width: 30px; height: 25px;}
+    #header .nav_m .btn {position: absolute; top: 0px; right: 10%;}
+    #header .nav_m .btn img {width: 25px; height: 20px;}
 
 .keycontent p {
     font-size: 10px;
@@ -1044,7 +1044,7 @@ font-family: 'Nanum Gothic', sans-serif; 설명, 작은글씨
     #content .content2 .box {
         width: 45%;
         float: left; 
-        margin: 50px 0 0 0;
+        margin: 50px 0 0 0px;
         
     }
     #content .content2 .box img {
@@ -1058,14 +1058,14 @@ font-family: 'Nanum Gothic', sans-serif; 설명, 작은글씨
         font-size: 14px; 
     }
     #content .content2 .box1 {}
-    #content .content2 .box2 {margin-left: 9%;}
+    #content .content2 .box2 {margin-left: 10%;}
     #content .content2 .box3 {}
-    #content .content2 .box4 {margin-left: 9%;}
+    #content .content2 .box4 {margin-left: 10%;}
     #content .content2 .box5 {}
     #content .content2 .box5 {}
-    #content .content2 .box6 {margin-left: 9%;}
+    #content .content2 .box6 {margin-left: 10%;}
     #content .content2 .box7 {}
-    #content .content2 .box8 {margin-left: 9%;}
+    #content .content2 .box8 {margin-left: 10%;}
 
     
     /*    content3    */
