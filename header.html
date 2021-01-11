@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>우리의자</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <!--  구글폰트  -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <script>
+    $(document).ready(function(){
+        //    모바일 헤더
+        $(".nav_m .btn").click(function(){
+            $(".nav_m_header").stop().fadeIn(1000);
+        });
+        $(".nav_m_header .m1 .close-btn").click(function(){
+            $(".nav_m_header").stop().fadeOut(1000);
+        }); 
+        
+    });
+        
+        
+    
+    </script>
+</head>
+<body>
+   <!-- header -->
+    <div id="header">
+        <!-- header_top -->
+        <div class="header_top">
+            <li>
+                <a href="login.html">로그인</a>
+                <a href="#">
+                    <img src="img/facebook.png" alt="facebook로고">
+                </a>
+                <a href="#">
+                    <img src="img/instar.png" 
+                    alt="instar로고">
+                </a>
+            </li>
+        </div>
+        <!-- nav -->
+        <div class="nav">
+           <a href="index.html">
+            <img src="img/logo.png" alt="우리의자로고">
+            </a>
+            <ul>
+                <li><a href="index-sub1-1.html">우리의자</a>
+                    <ul class="nav_sub">
+                        <li><a href="index-sub1-1.html">브랜드스토리</a></li>
+                        <li><a href="index-sub1-2.html">디자인센터</a></li>
+                        <li><a href="index-sub1-3.html">전국지점소개</a></li>
+                    </ul>
+                </li>
+                <li><a href="index-sub2-1.html">제품소개</a>
+                    <ul class="nav_sub">
+                        <li><a href="index-sub2-1.html">원목의자</a></li>
+                        <li><a href="index-sub2-2.html">서재/사무용의자</a></li>
+                        <li><a href="index-sub2-3.html">어린이의자</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">이벤트</a>
+                    <ul class="nav_sub">
+                        <li><a href="#">진행중 이벤트</a></li>
+                        <li><a href="#">지금 행사중</a></li>
+                        <li><a href="#">후기참여이벤트</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">고객센터</a>
+                    <ul class="nav_sub">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">A/S신청</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">1:1문의</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="nav_m">
+            <a href="index.html">
+                <img src="img/logo.png" alt="우리의자로고">
+            </a>
+            <a href="javascript:;" class="btn">
+                <img src="img/nav_btn.png" alt="모바일버튼">
+            </a>
+        </div>
+        
+       
+        <!-- /nav -->
+        
+    </div>
+    <!--    모바일 헤더    -->
+    <div class="nav_m_header">
+       <div class="m1">
+            <img src="img/logo.png" alt="우리의자로고">
+            <a href="javascript:;" class="close-btn">
+                <img src="img/close_btn.png" alt="닫기버튼">
+            </a> 
+       </div>
+       <div class="m2">
+          <ul>
+           <li><a href="login.html">로그인</a></li>
+           <li><a href="join.html">회원가입</a></li>
+           </ul>
+       </div>
+       <div class="m3">
+           <li><a href="index-sub1-1.html">우리의자</a></li>
+           <li><a href="index-sub2-1.html">제품소개</a></li>
+           <li><a href="#">이벤트</a></li>
+           <li><a href="#">고객센터</a></li>
+       </div>
+       <div class="m4">
+           <img src="img/facebook.png" alt="facebook로고">
+           <img src="img/instar.png" alt="instar로고">
+       </div>
+        
+    </div>
+    <!--    /모바일 헤더    -->
+    <!-- /header -->
+</body>
+</html>

@@ -1,0 +1,1252 @@
+@charset "utf-8";
+/*     메인컬러 #cc0000 rgb(204,0,0)    */
+/* font 스타일
+font-family: 'Noto Sans KR', sans-serif; 제목, 큰글씨
+font-family: 'Nanum Gothic', sans-serif; 설명, 작은글씨
+*/
+* {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+#wrap {max-width: 1920px; margin: 0 auto;}
+/* ----- keyimage ----- */
+
+
+/* ----- header ----- */
+#header {
+    position: absolute; z-index: 2;
+    width: 100%; left: 50%;
+    transform: translateX(-50%);
+    _height: 100px; 
+    background: rgba(70,70,70,0.5);
+}
+
+/* header_top */
+#header .header_top {
+    max-width: 1200px; height:50px;
+    
+}
+.header_top.on {display: none;}
+.header_top li {
+    _display: none; 
+    float: right; padding: 10px 10px 0 0;
+}
+.header_top li a {  
+    margin-left: 20px;
+    font-size: 12px; color: #fff;
+ 
+}
+.header_top li a:hover {color: #cc0000; opacity: 0.7;}
+.header_top li a:nth-child(2) img {width: 25px;}
+.header_top li a:nth-child(3) img {width: 25px;}
+
+
+
+/* header & nav */
+#header .nav {
+    position: relative;
+    max-width: 1200px;
+    height: 50px;
+}
+#header .nav img {
+    position: absolute; bottom: 0; left: 50%;
+    width: 150px;
+    transform: translate(-50%, 0%);   
+}
+
+/* 모바일 header & nav */
+#header .nav_m {
+    display: none; position: relative;
+    
+}
+#header .nav_m img {
+    position: absolute; top: 30px; left: 50%;
+    width: 120px;
+    transform: translate(-50%, 0%);
+}
+#header .nav_m .btn {position: absolute; top: 0px; right: 10%;}
+#header .nav_m .btn img {width: 30px; height: 30px;}
+.nav_m_header {
+    display: none;
+    position: fixed; top: 0; left: 0;
+    width: 100%; height: 100%; 
+    background: #f6f6f6;
+    z-index: 5;
+    text-align: center;
+}
+.nav_m_header .m1 {
+    position: relative;
+    height: 120px;
+}
+.nav_m_header .m1 img {
+    position: absolute; left: 50%; top: 30px; transform: translateX(-50%);
+    width: 100px; 
+}
+.nav_m_header .m1 .close-btn {
+    position: absolute; right: 10%;
+}
+.nav_m_header .m1 .close-btn img {width: 30px;}
+.nav_m_header .m2 {
+    width: 100%; height: 100px; 
+}
+.nav_m_header .m2 li {
+    width: 200px; height: 40px; line-height: 40px; 
+    display: inline-block;
+}
+.nav_m_header .m2 li:nth-child(1) {background: #cc0000;}
+.nav_m_header .m2 li:nth-child(1) a {color: #fff;}
+.nav_m_header .m2 li:nth-child(2) {border: 1px solid #cc0000;}
+.nav_m_header .m2 li a {font-size: 14px;}
+
+.nav_m_header .m3 {}
+.nav_m_header .m3 li {margin-bottom: 20px;}
+.nav_m_header .m3 li a {
+    font-size: 36px; font-family: 'Noto Sans KR', sans-serif;
+}
+.nav_m_header .m4 {float: right; margin-top: 100px; margin-right: 10%;}
+.nav_m_header .m4 img {width: 30px;}
+.nav_m_header .m4 img:nth-child(1) {margin-right: 20px;}
+
+/*   //모바일 header & nav */
+
+
+
+#header:hover .header_top li {
+    display: block;
+}
+#header:hover .nav ul li {
+    display: block;
+}
+#header:hover .nav .nav-btn {display: none;}
+
+#header .nav ul {position: relative;}
+.nav ul li {
+    float: left;
+    width: 220px; height: 50px; 
+    line-height: 50px;
+    text-align: center;
+}
+.nav ul li:hover {
+    background: rgba(119,119,119,0.7); 
+    transition: all 0.5s;
+}
+.nav ul li:hover .nav_sub {display: block; }
+.nav ul li:hover .nav_sub li a {color: #fff;}
+.nav ul li:hover a {}
+.nav ul li:nth-child(2) {margin-right: 320px}
+.nav ul li a {
+    padding: 10px 60px;
+    font-size: 18px; color: #fff;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* ----- nav in subnav ----- */
+.nav ul li .nav_sub {
+    position: absolute; top: -3px; left: 0;
+    display: none; transition: all 0.6s;
+    z-index: 1;
+}
+.nav ul li .nav_sub li {
+    background: rgba(119,119,119,0.7); 
+     transition: all 0.6s;
+}
+.nav ul li .nav_sub li:hover {
+    background: rgba(204,0,0,0.7);
+    _background: #cc0000; _opacity: 0.5;
+}
+.nav ul li .nav_sub li:hover a {color: #fff; opacity: 1;}
+.nav ul li .nav_sub li a {font-size: 14px}
+
+/*    keyimg    */
+#keyimg {max-width: 1920px; margin: 0 auto;}
+#keyimg .keyimg {}  
+#keyimg .keyimg .key {} 
+#keyimg .keyimg .key img {
+    width: 100%;  
+}  
+#keyimg .keyimg1 {position: relative;}
+/*  keyimg1 - text  */
+#keyimg .keyimg1 .key1-txt {
+    position: absolute; top: 40%; left: 10%;
+    _transform: translate(-50%, -50%);
+    _text-align: center;
+}
+.keyimg1 .key1-txt p {
+    font-size: 16px;
+}
+.keyimg1 .key1-txt h2 {
+    font-size: 30px; 
+    font-family: 'Noto Sans KR', sans-serif;
+}
+/*  keyimg2 - text  */
+#keyimg .keyimg2 img {_opacity: 0.3;}
+#keyimg .keyimg2 .key2-txt {
+    position: absolute; top: 30%; left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.keyimg2 .key2-txt p {
+    font-size: 16px; color: #f6f6f6;
+}
+.keyimg2 .key2-txt h2 {
+    font-size: 36px; color: #dedede; margin-bottom: 10px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+/*  keyimg3 - text  */
+#keyimg .keyimg3 .key3-txt {
+    position: absolute; top: 35%; left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.keyimg3 .key3-txt p {
+    font-size: 16px; color: #555;
+}
+.keyimg3 .key3-txt h2 {
+    font-size: 36px; color: #f6f6f6; margin-bottom: 10px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+/*  keyimg4 - text  */
+#keyimg .keyimg4 .key4-txt {
+    position: absolute; top: 35%; left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.keyimg4 .key4-txt p {
+    font-size: 16px; color: #555;
+}
+.keyimg4 .key4-txt h2 {
+    font-size: 36px; color: #555; margin-bottom: 10px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.swiper-pagination-bullet-active {
+    background: #cc0000!important;
+}
+
+
+
+#content {margin-top: 100px;}
+
+/* content2 */
+#content .content2 {
+    max-width: 1200px; height: 500px;
+    margin: 0 auto;
+    margin-top: 100px; margin-bottom: 100px;
+}
+.content2 .con2-title {width: 100%;}
+.content2 .con2-title h1 {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 30px; display: inline-block;
+}
+.content2 .con2-title ul {
+    float: right; margin-top: 50px;
+}
+.con2-title ul li {
+    float: left; width: 35px; height: 35px;
+    border: 2px solid #999;
+    border-radius: 10px;
+}
+.swiper-button-prev {
+    position: static!important;
+    background-image: none!important;
+}
+.swiper-button-next {
+    margin-left: 20px;
+    position: static!important;
+    background-image: none!important;
+}
+
+.swiper-container1 {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+
+.swiper-container2 {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+
+
+.con2-title ul li img {width: 70%; margin: 15% 0 0 15%;}
+
+
+#content .content2 .box {
+    float: left; 
+    margin: 50px 0;
+    width: 23.5%;
+    text-align: center;
+}
+#content .content2 .box:hover img{
+    box-shadow: 2px 2px 10px 1px #999;
+/*    오른쪽, 왼쪽, 흐려지는정도, 환산거리  */
+}
+#content .content2 .box img {
+    width: 100%;
+    margin-bottom: 10px;
+    _border-radius: 10px;
+}
+#content .content2 .box p:nth-child(2) {
+    font-size: 18px; font-weight: bold;
+    margin-bottom: 10px; 
+}
+#content .content2 .box p:nth-child(3) {
+    font-size: 14px; color: #cc0000;
+}
+
+#content .content2 .box1 {margin-left: 1%;}
+#content .content2 .box2 {margin-left: 1%;}
+#content .content2 .box3 {margin-left: 2%;}
+#content .content2 .box4 {margin-left: 1%;}
+#content .content2 .box5 {margin-left: 1%;}
+#content .content2 .box6 {margin-left: 1%;}
+#content .content2 .box7 {margin-left: 2%;}
+#content .content2 .box8 {margin-left: 1%;}
+
+
+/*  content3  */
+#content3 {}
+#content3 .content3 {
+    background: url(../img/content3-key.png) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 300px; line-height: 300px; text-align: center;
+    transition: all 0.7s;
+}
+#content3 .content3 h1 {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 30px; display: inline-block;
+}
+#content3 .content3-1 {
+    position: relative;
+    height: 500px;
+    max-width: 1200px; margin: 0 auto;
+}
+.content3-1 .txt1 {
+    width: 45%; text-align: center;
+    float: left; margin-left: 5%; margin-top: 10%;
+}
+.content3-1 .txt1 h1 {
+    font-size: 36px; margin-bottom: 10px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.content3-1 .txt1 p {
+    font-size: 16px; margin-bottom: 50px; 
+}
+.content3-1 .txt1 li {
+    width: 200px; height: 50px; line-height: 50px;
+    border: 1px solid #cc0000;
+    transition: all 0.7s;
+}
+.content3-1 .txt1 li:hover {
+    background: #cc0000;
+}
+.content3-1 .txt1 li:hover a {color: #fff;}
+.content3-1 .txt1 li a {
+    font-size: 14px;
+}
+.content3-1 img {
+    width: 40%; _border-radius: 10px;
+    position: absolute; top: -10%; right: 5%;
+}
+#content3 .content3-2 {
+    position: relative;
+    height: 800px;
+    max-width: 1200px; margin: 0 auto;
+}
+.content3-2 img {width: 100%; _border-radius: 10px;}
+.content3-2 .txt2 {
+    position: absolute; bottom: 20%; right: 5%;
+    width: 40%; height: 300px; text-align: center;
+    background: #f8f5f0; padding: 5% 2% 0 2%;
+    _border-radius: 10px;
+}
+.content3-2 .txt2 h1 {
+    font-size: 36px; margin-bottom: 10px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.content3-2 .txt2 p {
+    font-size: 16px; margin-bottom: 50px;
+}
+.content3-2 .txt2 li {
+    width: 200px; height: 50px; line-height: 50px;
+    border: 1px solid #cc0000;
+    transition: all 0.7s;
+}
+.content3-2 .txt2 li:hover {
+    background: #cc0000;
+}
+.content3-2 .txt2 li:hover a {color: #fff;}
+.content3-2 .txt2 li a {
+    font-size: 14px;
+}
+
+
+/*  content4  */
+#content .content {width: 100%;  background: #f6f6f6;}
+.content .content4 {
+    position: relative;
+    max-width: 1200px; height: 800px;  
+}
+.content .content4 .con4-title {
+    width: 100%; height: 150px; line-height: 150px;
+}
+.con4-title h1 {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 30px; display: inline-block;    
+}
+.con4-title a {
+    font-size: 14px; font-weight: 100;
+    transition: all 0.5s; float: right;
+}
+.con4-title a:hover {
+    color: #cc0000;
+}
+.content .content4 .rebox {
+    float: left; width: 30%; 
+}
+.content .content4 .rebox2 {margin-left: 5%;}
+.content .content4 .rebox3 {margin-left: 5%;}
+.content .content4 .rebox4 {display: none;}
+.content .content4 .rebox5 {
+    margin-left: 5%; display: none;
+}
+.content .content4 .rebox6 {
+    margin-left: 5%; display: none;
+}
+.content4 .rebox img {
+    width: 100%;
+    _border-radius: 10px;
+    _border: 1px solid #dedede;
+}
+.content4 .rebox img:nth-child(3) {float: left; width: 80px;}
+.content4 .rebox h2 {font-size: 22px; padding: 20px 0;}
+.content4 .rebox p:nth-child(4) {
+    font-size: 12px; margin: 5px 0 10px 0px;
+}
+.content4 .rebox p:nth-child(5) {
+    font-size: 14px; margin-bottom: 10px;
+} 
+.content4 .rebox p:nth-child(6) {font-size: 12px; float: right;}
+
+
+
+
+/* content5 */
+#content {margin-bottom: 150px;}
+#content .content5 {max-width: 1200px; margin: 0 auto;}
+#content .content5 h1 {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 30px;
+    margin: 50px 0;
+}
+/* content5-1 */
+.content5 .content-img1 {
+    position: relative;
+    margin-bottom: 50px;
+    background: url(../img/content1.png) no-repeat;
+    background-size: cover;
+    width: 100%; height: 400px;
+    _border-radius: 10px;
+}
+
+.content-img1 .btn-box1 {
+    position: absolute; top: 0; right: 0;
+    width: 400px; height: 400px;
+    _background: #4c4c4c;
+    background: rgba(76,76,76,0.7);
+    padding: 80px 0 0px 80px;
+    _border-radius: 0 10px 10px 0;
+}
+.content-img1 .btn-box1 p {
+    margin-bottom: 10px; 
+    color: #fff; font-size: 16px;
+}
+.content-img1 .btn-box1 h2 {
+    color: #fff; font-size: 36px;
+    margin-bottom: 50px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.content-img1 .btn-box1 li {
+    float: left; text-align: center;
+    width: 70%; height: 40px; line-height: 40px;
+    border: 1px solid #cc0000;
+    transition: all 0.7s;
+}
+.content-img1 .btn-box1 li:hover {
+    background: rgba(204,0,0,0.6);
+    border: 0;
+}
+.btn-box1 li a {
+    color: #fff; font-size: 14px;
+    
+}
+
+/* content5-2 */
+.content5 .content-img2 {
+    position: relative;
+    margin-bottom: 50px;
+    background: url(../img/kokoimg.png) no-repeat;
+    background-size: cover;
+    width: 100%; height: 400px;
+    _border-radius: 10px;
+}
+
+.content-img2 .btn-box2 {
+    position: absolute; top: 0; left: 0;
+    width: 400px; height: 400px;
+    _background: #4c4c4c;
+    background: rgba(76,76,76,0.7);
+    padding: 80px 0 0px 80px;
+    _border-radius: 10px 0 0 10px;
+}
+.content-img2 .btn-box2 p {
+    margin-bottom: 10px;
+    color: #fff; font-size: 16px;
+}
+.content-img2 .btn-box2 h2 {
+    color: #fff; font-size: 36px;
+    margin-bottom: 50px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.content-img2 .btn-box2 li {
+    float: left; text-align: center;
+    width: 70%; height: 40px; line-height: 40px;
+    border: 1px solid #cc0000;
+    transition: all 0.7s;
+}
+.content-img2 .btn-box2 li:hover {
+    background: rgba(204,0,0,0.6);
+    border: 0;
+}
+.btn-box2 li a {
+    color: #fff; font-size: 14px;   
+}
+
+/*     top button    */
+#top-btn {
+    position: fixed; bottom: 50px; right: 100px;
+    width: 60px; height: 60px;
+    border: 3px solid #eee;
+    border-radius: 10px;
+    _background: rgba(119,119,119,0.6);
+    background: #fff;
+    opacity: 0;
+    transition: all 0.5s;
+    z-index: 3;
+}
+#top-btn.on {opacity: 1;}
+#top-btn .top-btn {}
+#top-btn .top-btn a {}
+#top-btn .top-btn a img {width: 70%; margin: 15% 0 0 15%;}
+
+
+/* footer */
+#footer {background: #444; height: 250px; text-align: center;}
+#footer .footer {max-width: 1200px; margin: 0 auto;}
+.footer img {  
+    width: 10%; margin-top: 40px; margin-bottom: 40px;
+}
+.footer .footer-txt {
+    color: #dedede; font-size: 16px;
+}
+
+
+
+
+/* ---------- 미디어 쿼리 ---------- */
+
+/* 1200px ~ 960px */
+@media all and (max-width:1220px) {
+    #keyimage {
+        width: 100%; height: 700px; transition: all 0.5s;
+        background-size: cover;    
+    }
+    
+    #header .header_top {display: none;}
+    #header .nav {display: none;}
+    #header .nav_m {display: block;}
+    
+    #header {
+        height: 100px; 
+        background: rgba(255,255,255,0)!important;
+        
+    }
+    
+    #keyimage .keycontent {width: 90%; }
+    #keyimage .keycontent p {font-size: 18px;}
+    #keyimage .keycontent h1 {font-size: 30px;}
+    
+    #content {margin-top: 100px; }
+    
+    /*    content1,2   */
+    #content .content2 {
+        max-width: 90%;  
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+    #content .content2 h1 {
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 26px; 
+    }
+    #content .content2 .box {
+        width: 22%;
+        float: left; 
+        margin: 50px 0 0 0;
+        
+    }
+    #content .content2 .box img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    #content .content2 .box p:nth-child(2) {
+        font-size: 16px; font-weight: bold;
+        margin-bottom: 10px; 
+    }
+
+    #content .content2 .box1 {}
+    #content .content2 .box2 {margin-left: 4%;}
+    #content .content2 .box3 {margin-left: 4%;}
+    #content .content2 .box4 {margin-left: 4%;}
+    #content .content2 .box5 {}
+    #content .content2 .box6 {margin-left: 4%;}
+    #content .content2 .box7 {margin-left: 4%;}
+    #content .content2 .box8 {margin-left: 4%;}
+
+    /*    content3   */
+    #content3 {}
+    #content3 .content3 {
+        background: url(../img/content3-key.png) no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 200px; line-height: 200px; text-align: center;
+    }
+    
+    #content3 .content3-1 {
+        position: relative;
+        height: 500px;
+        width: 100%;
+        
+    }
+    .content3-1 .txt1 {
+        width: 45%; text-align: center;
+        float: left; margin-left: 5%; margin-top: 10%;
+    }
+
+    .content3-1 img {
+        width: 40%; 
+        position: absolute; top: -10%; right: 10%;
+    }
+    #content3 .content3-2 {
+        position: relative;
+        height: 800px;
+        width: 90%;
+        
+    }
+    .content3-2 img {width: 100%;}
+    .content3-2 .txt2 {
+        position: absolute; bottom: 30%; right: 5%;
+        width: 45%; height: 300px; text-align: center;
+        background: #f8f5f0; padding-top: 5%;
+    }
+
+    
+    
+    
+    /*    content4   */
+    #content .content {width: 100%; background: #eee;}
+    .content .content4 {
+        position: relative;
+        width: 90%; height: 700px;      
+    }
+    .content .content4 h1 {
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 26px; padding: 50px 0;
+    }
+    .content .content4 div {
+        float: left; width: 30%; 
+        
+    }
+    .content .content4 div img {width: 100%;}
+    .content .content4 div:nth-child(3) {margin-left: 5%;}
+    .content .content4 div:nth-child(4) {margin-left: 5%;}
+    
+    .content4 div img:nth-child(3) {float: left; width: 60px;}
+    .content4 div h2 {font-size: 20px; padding: 20px 0;}
+    .content4 div p:nth-child(4) {
+        font-size: 12px; margin: 5px 0 10px 0px;
+    }
+    .content4 div p:nth-child(5) {
+        font-size: 12px; margin-bottom: 10px;
+    } 
+    .content4 div p:nth-child(6) {font-size: 10px; float: right;}
+    
+    
+    /*    content5    */
+    .content5 {width: 90%;}
+    .content5 h1 {
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 26px;
+        margin: 50px 0;
+    }
+/*    content5-1    */
+    .content5 .content-img1 {
+    position: relative;
+    margin-bottom: 50px;
+    width: 100%; height: 350px;
+    background: url(../img/content1.png) no-repeat;
+    background-size: cover;       
+    }
+
+    .content-img1 .btn-box1 {
+        position: absolute; top: 0; right: 0;
+        width: 35%; height: inherit;
+        _background: #4c4c4c;
+        background: rgba(76,76,76,0.7);
+        
+    }
+    .content-img1 .btn-box1 p {
+        margin-bottom: 10px;
+        color: #fff; font-size: 16px;
+    }
+    .content-img1 .btn-box1 h2 {
+        color: #fff; font-size: 32px;
+        margin-bottom: 40px;
+    }
+
+    
+/*    content5-2    */
+    .content5 .content-img2 {
+    position: relative;
+    margin-bottom: 50px;
+        height: 350px;
+    }
+
+    .content-img2 .btn-box2 {
+        position: absolute; top: 0; left: 0;
+        width: 35%; height: inherit;
+        _background: #4c4c4c;
+        background: rgba(76,76,76,0.7);
+
+    }
+    .content-img2 .btn-box2 p {
+        margin-bottom: 10px;
+        color: #fff; font-size: 16px;
+    }
+    .content-img2 .btn-box2 h2 {
+        color: #fff; font-size: 32px;
+        margin-bottom: 40px;
+    }
+    
+    
+}
+/* 960px ~ 560px */
+@media all and (max-width:960px) {
+    #keyimage {
+    width: 100%; height: 600px; transition: all 0.5s;
+    background-size: cover;    
+    }
+    #header .nav_m img {
+    position: absolute; top: 30px; left: 50%;
+    _width: 130px;
+    transform: translate(-50%, 0%);
+    }
+    #header .nav_m .btn {position: absolute; top: 5px; right: 10%;}
+    #header .nav_m .btn img {width: 35px; height: 30px;}
+    
+    /*  keyimg1 - text  */
+#keyimg .keyimg1 .key1-txt {
+    position: absolute; top: 40%; left: 10%;
+    _transform: translate(-50%, -50%);
+    _text-align: center;
+}
+.keyimg1 .key1-txt p {
+    font-size: 1.5vw;
+}
+.keyimg1 .key1-txt h2 {
+    font-size: 3vw; 
+    font-family: 'Noto Sans KR', sans-serif;
+}
+/*  keyimg2 - text  */
+#keyimg .keyimg2 .key2-txt {
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.keyimg2 .key2-txt p {
+    font-size: 1.5vw; color: #f6f6f6;
+}
+.keyimg2 .key2-txt h2 {
+    font-size: 4vw; color: #dedede; margin-bottom: 5px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+/*  keyimg3 - text  */
+#keyimg .keyimg3 .key3-txt {
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.keyimg3 .key3-txt p {
+    font-size: 1.5vw; color: #f6f6f6;
+}
+.keyimg3 .key3-txt h2 {
+    font-size: 4vw; color: #f6f6f6; margin-bottom: 5px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+/*  keyimg4 - text  */
+#keyimg .keyimg4 .key4-txt {
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.keyimg4 .key4-txt p {
+    font-size: 1.5vw; color: #555;
+}
+.keyimg4 .key4-txt h2 {
+    font-size: 4vw; color: #555; margin-bottom: 5px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+    
+    
+    
+    #content {margin-top: 100px; }
+    
+
+    #content .content2 {
+    max-width: 90%; height: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+    }
+    #content .content2 h1 {
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 26px; 
+    }
+  
+    /*  content3  */
+    #content3 .content3-1 {
+        position: relative;
+        height: 400px;
+        max-width: 1200px; margin: 0 auto;
+    }
+    .content3-1 .txt1 {
+        width: 45%; text-align: center;
+        float: left; margin-left: 5%; margin-top: 5%;
+    }
+    .content3-1 .txt1 h1 {
+        font-size: 30px; margin-bottom: 5px;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    .content3-1 .txt1 p {
+        font-size: 14px; margin-bottom: 20px; 
+    }
+    .content3-1 .txt1 li {
+        width: 150px; height: 40px; line-height: 40px;
+        border: 1px solid #cc0000;
+        transition: all 0.7s;
+    }
+    #content3 .content3-2 {
+        position: relative;
+        height: 600px;
+        max-width: 1200px; margin: 0 auto;
+    }
+    .content3-2 .txt2 {
+        position: absolute; bottom: 20%; right: 5%;
+        width: 45%; height: 250px; text-align: center;
+        background: #f8f5f0; padding-top: 5%;
+    }
+    .content3-2 .txt2 h1 {
+        font-size: 30px; margin-bottom: 5px;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    .content3-2 .txt2 p {
+        font-size: 14px; margin-bottom: 20px;
+    }
+    .content3-2 .txt2 li {
+        width: 150px; height: 40px; line-height: 40px;
+        border: 1px solid #cc0000;
+        transition: all 0.7s;
+    }
+    
+    /*    content4    */
+    #content .content {width: 100%; background: #eee;}
+    .content .content4 {
+        position: relative;
+        width: 90%; height: 650px;   
+        
+    }
+    .content .content4 h1 {
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 26px; padding: 50px 0;
+    }
+    .content .content4 div {
+        float: left; width: 30%; 
+        padding-bottom: 0px;
+        
+    }
+    .content .content4 div img {width: 100%;}
+    .content .content4 div:nth-child(3) {margin-left: 5%;}
+    .content .content4 div:nth-child(4) {margin-left: 5%;}
+    
+    .content4 div img:nth-child(3) {float: left; width: 60px;}
+    .content4 div h2 {font-size: 18px; padding: 20px 0;}
+    .content4 div p:nth-child(4) {
+        font-size: 12px; margin: 5px 0 10px 0px;
+    }
+    .content4 div p:nth-child(5) {
+        font-size: 12px; margin-bottom: 10px;
+    } 
+    .content4 div p:nth-child(6) {font-size: 10px; float: right;}
+    
+    
+    
+    /*    content5    */
+    .content5 {width: 90%;}
+    .content5 h1 {
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 26px;
+        margin: 50px 0;
+    }
+/*    content5-1    */
+    .content5 .content-img1 {
+    position: relative;
+    margin-bottom: 50px;
+    width: 100%; height: 300px;
+    background: url(../img/content1.png) no-repeat;
+    background-size: cover;
+     
+        
+    }
+
+    .content-img1 .btn-box1 {
+        position: absolute; top: 0; right: 0;
+        width: 35%; height: inherit;
+        _background: #4c4c4c;
+        background: rgba(76,76,76,0.7);
+        padding: 8% 0 0 6%;
+    }
+    .content-img1 .btn-box1 p {
+        margin-bottom: 10px;
+        color: #fff; font-size: 14px;
+    }
+    .content-img1 .btn-box1 h2 {
+        color: #fff; font-size: 24px;
+        margin-bottom: 30px;
+    }
+    .content-img1 .btn-box1 li {
+        width: 80%;
+    }
+    
+    
+/*    content5-2    */
+    .content5 .content-img2 {
+    position: relative;
+    margin-bottom: 50px;
+    height: 300px;
+    background: url(../img/kokoimg.png) no-repeat;
+    background-size: cover;
+    }
+
+    .content-img2 .btn-box2 {
+        position: absolute; top: 0; left: 0;
+        width: 35%; height: inherit;
+        _background: #4c4c4c;
+        background: rgba(76,76,76,0.7);
+        padding: 8% 0 0 6%;
+    }
+    .content-img2 .btn-box2 p {
+        margin-bottom: 10px;
+        color: #fff; font-size: 14px;
+    }
+    .content-img2 .btn-box2 h2 {
+        color: #fff; font-size: 24px;
+        margin-bottom: 40px;
+    }
+    .content-img2 .btn-box2 li {
+        width: 80%;
+    }
+
+     
+    /* footer */
+    .footer img {  
+        width: 15%; margin-top: 40px; margin-bottom: 40px;
+    }
+    .footer .footer-txt {
+        color: #dedede; font-size: 14px;
+        margin: 0 10%;
+    }
+
+    /*     top button    */
+    #top-btn {
+        position: fixed; bottom: 50px; right: 50px;
+        width: 50px; height: 50px;
+        border: 3px solid #eee;
+        border-radius: 10px;
+        _background: rgba(119,119,119,0.6);
+        background: #fff;
+        opacity: 0;
+        transition: all 0.5s;
+        z-index: 3;
+    }
+    
+    
+    
+}
+/* 560px ~ 0px */
+@media all and (max-width:560px) {
+    
+    #keyimage {
+    width: 100%; height: 400px; transition: all 0.5s;
+    background-size: cover;    
+    }
+    #keyimage .keycontent {
+     margin-top: 50px; 
+     
+}
+    #header .nav_m img {
+    position: absolute; top: 30px; left: 50%;
+    width: 100px;
+    transform: translate(-50%, 0%);
+    }
+    #header .nav_m .btn {position: absolute; top: 5px; right: 10%;}
+    #header .nav_m .btn img {width: 30px; height: 25px;}
+
+.keycontent p {
+    font-size: 10px;
+    
+}
+.keycontent h1 {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+    
+    
+    
+    
+    #content .content2 {
+    max-width: 90%; height: 700px; _height: 100%; 
+    margin: 0 auto;
+    margin-top: 50px;
+    }
+    #content .content2 h1 {
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 26px; 
+    }
+    #content .content2 .box {
+        width: 45%;
+        float: left; 
+        margin: 50px 0 0 0;
+        
+    }
+    #content .content2 .box img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    #content .content2 .box p:nth-child(2) {
+        font-size: 16px; font-weight: bold;
+    }
+    #content .content2 .box p:nth-child(3) {
+        font-size: 14px; 
+    }
+    #content .content2 .box1 {}
+    #content .content2 .box2 {margin-left: 9%;}
+    #content .content2 .box3 {}
+    #content .content2 .box4 {margin-left: 9%;}
+    #content .content2 .box5 {}
+    #content .content2 .box5 {}
+    #content .content2 .box6 {margin-left: 9%;}
+    #content .content2 .box7 {}
+    #content .content2 .box8 {margin-left: 9%;}
+
+    
+    /*    content3    */
+    #content3 .content3 {
+        background: url(../img/content3-key.png) no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 150px; line-height: 150px; text-align: center;
+    }
+    #content3 .content3-1 {
+        position: relative;
+        _height: 650px;
+    }
+    .content3-1 img {
+        width: 80%; 
+        position: static; margin-left: 10%; margin-top: 10px;
+    }
+    .content3-1 .txt1 {
+        width: 80%; height: 200px; text-align: center;
+        float: left; margin-left: 10%; margin-top: 0;
+        padding-top: 5%; background: #f8f5f0;
+    }
+    .content3-1 .txt1 h1 {
+        font-size: 26px; margin-bottom: 10px;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    .content3-1 .txt1 p {
+        font-size: 12px; margin-bottom: 40px; 
+    }
+    .content3-1 .txt1 li a {
+        font-size: 12px;
+    }
+    
+    #content3 .content3-2 {
+        position: relative;
+        _height: 800px;
+        margin: 0;
+        margin-bottom: 50px;
+    }
+    .content3-2 img {
+        width: 90%; 
+        margin-left: 10%; margin-top: 10px;
+    }
+    .content3-2 .txt2 {
+        position: static;
+        width: 90%; height: 200px; text-align: center;
+        background: #f8f5f0; padding-top: 5%; margin-left: 10%;
+    }
+    .content3-2 .txt2 h1 {
+        font-size: 26px; margin-bottom: 10px;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    .content3-2 .txt2 p {
+        font-size: 12px; margin-bottom: 40px;
+    }
+    .content3-2 .txt2 li a {
+        font-size: 12px;
+    }
+    
+    
+    
+    /*    content4     */
+    #content {margin-top: 100px; }
+    #content .content {width: 100%; background: #eee;}
+    .content .content4 {
+        position: relative;
+        width: 90%; height: 700px;   
+        
+    }
+    .content .content4 h1 {
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 26px; padding: 50px 0;
+    }
+    .content .content4 div {
+        float: left; width: 30%; 
+        padding-bottom: 60px;
+        
+    }
+    
+    
+    /*    content5    */
+    .content5 {width: 90%;}
+    .content5 h1 {
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 26px;
+        margin: 50px 0;
+    }
+/*    content5-1    */
+    .content5 .content-img1 {
+    position: relative;
+    margin-bottom: 50px;
+    width: 100%; height: 250px;
+    background: url(../img/content1.png) no-repeat;
+    background-size: cover;
+ 
+    }
+
+    .content-img1 .btn-box1 {
+        position: absolute; top: 0; right: 0;
+        width: 100%; height: inherit;
+        _background: #4c4c4c;
+        background: rgba(76,76,76,0.5);
+        padding: 5% 0 0 5%;
+    }
+    .content-img1 .btn-box1 p {
+        margin-bottom: 10px;
+        color: #fff; font-size: 14px;
+    }
+    .content-img1 .btn-box1 h2 {
+        color: #fff; font-size: 24px;
+        margin-bottom: 12%;
+    }
+    .content-img1 .btn-box1 li {
+        float: left; 
+        width: 90%; height: 40px; line-height: 40px;
+        
+    }
+
+    .btn-box1 li a {
+        color: #fff; font-size: 12px;     
+    }
+    
+/*    content5-2    */
+    .content5 .content-img2 {
+    position: relative;
+    margin-bottom: 50px;
+    height: 250px;
+    background: url(../img/koko-m.png) no-repeat;
+    background-size: cover;
+    }
+
+    .content-img2 .btn-box2 {
+        position: absolute; top: 0; left: 0;
+        width: 100%; height: inherit;
+        _background: #4c4c4c;
+        background: rgba(76,76,76,0.5);
+        padding: 5% 0 0 5%;
+    }
+    .content-img2 .btn-box2 p {
+        margin-bottom: 10px;
+        color: #fff; font-size: 14px;
+    }
+    .content-img2 .btn-box2 h2 {
+        color: #fff; font-size: 24px;
+        margin-bottom: 12%;
+    }
+    .content-img2 .btn-box2 li {
+        float: left; 
+        width: 90%; height: 40px; line-height: 40px;
+
+    }
+
+    .btn-box2 li a {
+        color: #fff; font-size: 12px;
+    }
+    
+    .footer img {  
+        width: 20%; margin-top: 40px; margin-bottom: 40px;
+    }
+    /*     top button    */
+    #top-btn {
+        position: fixed; bottom: 50px; right: 20px;
+        width: 50px; height: 50px;
+        border: 3px solid #eee;
+        border-radius: 10px;
+        _background: rgba(119,119,119,0.6);
+        background: #fff;
+        opacity: 0;
+        transition: all 0.5s;
+        z-index: 3;
+    }
+    
+    
+    
+    
+}
+
+
+
+
+
+
+
+

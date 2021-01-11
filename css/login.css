@@ -1,0 +1,98 @@
+@charset "utf-8";
+/*     메인컬러 #cc0000 rgb(204,0,0)    */
+/* font 스타일
+font-family: 'Noto Sans KR', sans-serif; 제목, 큰글씨
+font-family: 'Nanum Gothic', sans-serif; 설명, 작은글씨
+*/
+* {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+#login {margin-top: 200px; height: 800px; }
+#login .login {max-width: 1200px; text-align: center;}
+#login .login h1 {
+    font-size: 46px; font-family: 'Noto Sans KR', sans-serif;
+    margin-bottom: 20px;
+}
+#login .login p {
+    font-size: 16px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+#login .login .id {width: 100%; margin-bottom: 20px;}
+#login .login .id li {
+    font-family: 'Noto Sans KR', sans-serif;
+    width: 40%; text-align: left;
+    font-size: 14px; margin-bottom: 10px;
+}
+#login .login .id input[type="text"] {
+    width: 40%; height: 60px;
+    background: #eee; border: 0;
+    text-indent: 10px;
+    font-size: 16px;
+}
+#login .login .pwd {width: 100%; margin-bottom:20px;}
+#login .login .pwd li {
+    font-family: 'Noto Sans KR', sans-serif;
+    width: 40%; text-align: left;
+    font-size: 14px; margin-bottom: 10px;
+}
+#login .login .pwd input[type="password"] {
+    width: 40%; height: 60px;
+    background: #eee; border: 0;
+    text-indent: 10px;
+    font-size: 16px;
+    font-size: 16px;
+}
+#login .login .check {
+    width: 40%;
+    margin-bottom:20px; text-align: left;
+}
+#login .login .check label {
+    font-size: 16px; 
+    cursor: pointer;
+}
+#login .login .check label input[type="checkbox"] {
+    width: 40px; height: 20px; 
+    border-radius: 10px;
+}
+
+#login .btn { margin-bottom: 20px;}
+#login .btn li {
+    background: #cc0000; width: 40%;
+    height: 60px; line-height: 60px; 
+    text-align: center;
+    transition: all 0.8s;
+    cursor: pointer;
+}
+#login .btn li:hover {
+    background: #fff;
+    border: 1px solid #cc0000;
+}
+#login .btn li:hover a {
+    color: #cc0000;
+}
+#login .btn li a {font-size: 18px; color: #fff;}
+
+#login .join {width: 100%;}
+#login .join li {}
+#login .join li a {font-size: 14px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

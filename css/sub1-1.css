@@ -1,0 +1,225 @@
+@charset "utf-8";
+/*     메인컬러 #cc0000 rgb(204,0,0)    */
+/* font 스타일
+font-family: 'Noto Sans KR', sans-serif; 제목, 큰글씨
+font-family: 'Nanum Gothic', sans-serif; 설명, 작은글씨
+*/
+* {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+#wrap {max-width: 1920px; margin: 0 auto;}
+
+#sub-key {
+    width: 100%; height: 300px;
+    background: url(../img/chair/brand-key.png) center no-repeat ;
+    background-size: cover;
+}
+#sub-key .keycont {
+    max-width: 1200px;
+    padding-top: 100px;
+}
+#sub-key .keycont h1 {
+    color: #fff; font-size: 24px;
+    font-weight: bold;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+#content {}
+/*        컨텐츠 바        */
+#content .con-bar {
+    max-width: 1200px;
+    height: 100px; line-height: 100px;
+}
+.con-bar p {
+    float: left;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 24px; font-weight: bold;
+}
+.con-bar ul {float: right;}
+.con-bar ul li {
+    float: left;
+    width: 100px; height: 20px;
+}
+.con-bar ul li a {
+    font-size: 14px;
+}
+.con-bar ul li:nth-child(1) a {
+    font-weight: bold;
+    border-right: 2px solid #111;
+    padding-right: 10px;
+}
+.con-bar ul li:nth-child(2) a {
+    border-right: 2px solid #111;
+    padding-right: 10px;
+}
+
+/*        컨텐츠1 라운드        */
+#content #con1 {
+    width: 100%; height: 500px;
+    background: rgba(250,250,250,1);
+        
+}
+#con1 .con1 {
+    max-width: 1200px; text-align: center;
+}
+.con1 h1 {
+    padding-top: 50px; font-size: 36px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.con1 .round {
+    float: left;
+    width: 280px; height: 280px; 
+    background: rgba(200,200,200,0.5);
+    padding-top: 75px; margin: 80px 10px;
+    border-radius: 280px;
+}
+.con1 .round h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.con1 .round p {
+    font-size: 16px;
+}
+
+/*        컨텐츠2 텍스트        */
+#content #con2 {margin-top: 100px;}
+#con2 .con2 {max-width: 1200px;}
+.con2 .txt {
+    width: 100%; height: 100px;
+    padding-top: 30px;
+    border-bottom: 2px solid #eee;
+
+}
+.con2 .txt h2 {
+    width: 20%; margin-right: 10%;  float: left; font-size: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.con2 .txt p {width: 70%;  float: left; font-size: 14px;}
+
+
+/*        컨텐츠3 이미지        */
+#content #con3 {
+    width: 100%;
+    background: #eee;
+    margin-top: 100px;
+}
+#con3 .con3 {
+    max-width: 1200px; text-align: center;
+    padding: 50px 0;
+}
+#con3 .con3 h2 {
+    margin-bottom: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 36px;
+}
+#con3 .con3 p {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+#con3 .con3 img {
+    width: 100%;
+}
+
+
+
+/*        컨텐츠4 라운드2        */
+#content #con4 {
+    width: 100%; height: 500px;
+    background: rgba(250,250,250,1);
+        
+}
+#con4 .con4 {
+    max-width: 1200px; text-align: center;
+}
+.con4 h1 {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 36px;
+    padding-top: 50px;
+}
+.con4 .round {
+    float: left;
+    width: 280px; height: 280px; 
+    background: rgba(200,200,200,0.6);
+    padding-top: 75px; margin: 80px 10px;
+    border-radius: 300px;
+}
+.con4 .round h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.con4 .round p {
+    font-size: 16px;
+}
+
+
+/*        컨텐츠5 이미지2        */
+#content #con5 {
+    width: 100%;
+    background: #eee;
+    margin-top: 100px;
+}
+#con5 .con5 {
+    max-width: 1200px; text-align: center;
+    padding: 50px 0;
+}
+#con5 .con5 h2 {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+#con5 .con5 p {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+#con5 .con5 img {
+    width: 100%;
+}
+
+/*        컨텐츠6 텍스트        */
+#content #con6 {margin-top: 100px; margin-bottom: 100px;}
+#con6 .con6 {max-width: 1200px;}
+.con6 .txt {
+    width: 100%; height: 100px;
+    padding-top: 30px;
+    border-bottom: 2px solid #eee;
+
+}
+.con6 .txt h2 {
+    width: 20%; margin-right: 10%;  float: left;
+    font-size: 30px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.con6 .txt p {
+    width: 70%;  float: left;
+    color: #777;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

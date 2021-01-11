@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<link rel="stylesheet" href="css/reset.css">
+<script src="js/jquery-3.5.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+       //    탑버튼 기능
+        $(window).scroll(function(){
+            if($(this).scrollTop() > 500){
+                $("#top-btn").addClass("on");
+            } else {
+                $("#top-btn").removeClass("on");
+            };
+            $("#top-btn a").click(function(){   
+                $("html, body").stop().animate({
+                    scrollTop: 0
+                }, 1000);
+
+            });
+        }); 
+    });
+</script>
+<style>
+    /*     top button    */
+    #top-btn {
+        position: fixed; bottom: 50px; right: 100px;
+        width: 60px; height: 60px;
+        border: 3px solid #eee;
+        border-radius: 10px;
+        _background: rgba(119,119,119,0.6);
+        background: #fff;
+        opacity: 0;
+        transition: all 0.5s;
+        z-index: 3;
+    }
+    #top-btn.on {opacity: 1;}
+    #top-btn .top-btn {}
+    #top-btn .top-btn a {}
+    #top-btn .top-btn a img {width: 70%; margin: 15% 0 0 15%;}
+
+    /* 960px ~ 560px */
+    @media all and (max-width:960px) {
+        /*     top button    */
+        #top-btn {
+            position: fixed; bottom: 50px; right: 50px;
+            width: 50px; height: 50px;
+            border: 3px solid #eee;
+            border-radius: 10px;
+            _background: rgba(119,119,119,0.6);
+            background: #fff;
+            opacity: 0;
+            transition: all 0.5s;
+            z-index: 3;
+        }
+    }
+    /* 560px ~ 0px */
+    @media all and (max-width:560px) {
+        /*     top button    */
+        #top-btn {
+            position: fixed; bottom: 50px; right: 20px;
+            width: 50px; height: 50px;
+            border: 3px solid #eee;
+            border-radius: 10px;
+            _background: rgba(119,119,119,0.6);
+            background: #fff;
+            opacity: 0;
+            transition: all 0.5s;
+            z-index: 3;
+        }
+    }
+    
+</style>
+</head>
+<body>
+    <!----    탑 버튼    ----> 
+    <div id="top-btn">
+        <div class="top-btn">
+            <a href="javascript:;">
+                <img src="img/up_btn.png" alt="업버튼">
+            </a>
+        </div>
+    </div>
+    <!----    //탑 버튼    ---->  
+</body>
+</html>

@@ -1,0 +1,205 @@
+@charset "utf-8";
+/*     메인컬러 #cc0000 rgb(204,0,0)    */
+/* font 스타일
+font-family: 'Noto Sans KR', sans-serif; 제목, 큰글씨
+font-family: 'Nanum Gothic', sans-serif; 설명, 작은글씨
+*/
+* {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+#sub-key {
+    width: 100%; height: 300px;
+    background: url(../img/chair/shop-key.png) no-repeat center;
+    background-size: cover;
+}
+#sub-key .keycont {
+    max-width: 1200px;
+    padding-top: 100px;
+}
+#sub-key .keycont h1 {
+    font-size: 24px; 
+    font-weight: bold;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#content {}
+/*        컨텐츠 바        */
+#content .con-bar {
+    max-width: 1200px;
+    height: 100px; line-height: 100px;
+}
+.con-bar p {
+    float: left; font-family: 'Noto Sans KR', sans-serif;
+    font-size: 24px; font-weight: bold;
+}
+.con-bar ul {float: right;}
+.con-bar ul li {
+    float: left;
+    width: 100px; height: 20px;
+}
+.con-bar ul li a {
+    font-size: 14px;
+}
+.con-bar ul li:nth-child(1) a {
+    
+    border-right: 2px solid #111;
+    padding-right: 10px;
+}
+.con-bar ul li:nth-child(2) a {
+
+    border-right: 2px solid #111;
+    padding-right: 10px;
+}
+.con-bar ul li:nth-child(3) a {
+    font-weight: bold;
+    
+}
+
+#con1 {}
+#con1 .con1 {
+    max-width: 1200px; margin: 0 auto;
+}
+
+/*  con2  */
+#con2 {width: 100%; margin-top: 100px;}
+#con2 .con2 {
+    max-width: 1200px; margin: 0 auto;
+}
+
+/*  con2-1  */
+#con2 .con2 .con2-1 {width: 100%; height: 400px;}
+.con2 .con2-1 img {width: 60%; float: left;}
+.con2 .con2-1 .txt {width: 30%; margin-left: 10%; float: left;}
+.con2-1 .txt h1 {
+    font-size: 36px; margin-top: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.con2-1 .txt h2 {
+    font-size: 24px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.con2-1 .txt h3 {font-size: 16px; font-weight: 100; margin-bottom: 30px;}
+.con2-1 .txt p {font-size: 14px; margin-bottom: 5px;}
+.con2-1 .txt li {
+    float: left; margin-top: 40px; text-align: center;
+    width: 150px; height: 40px; line-height: 40px;
+    border: 1px solid #cc0000;
+    transition: all 0.7s;
+}
+.con2-1 .txt li:hover {
+    border: 0; background: #cc0000;
+}
+.con2-1 .txt li:hover a {color: #fff;}
+.con2-1 .txt li a {
+    font-size: 12px;
+}
+
+/*  con2-2  */
+#con2 .con2 .con2-2 {width: 100%; height: 400px;}
+.con2 .con2-2 img {width: 60%; float: left;}
+.con2 .con2-2 .txt {width: 30%; margin-left: 10%; float: left;}
+.con2-2 .txt h1 {
+    font-size: 36px; margin-top: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.con2-2 .txt h2 {
+    font-size: 24px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.con2-2 .txt h3 {font-size: 16px; font-weight: 100; margin-bottom: 30px;}
+.con2-2 .txt p {font-size: 14px; margin-bottom: 5px;}
+.con2-2 .txt li {
+    float: left; margin-top: 40px; text-align: center;
+    width: 150px; height: 40px; line-height: 40px;
+    border: 1px solid #cc0000;
+    transition: all 0.7s;
+}
+.con2-2 .txt li:hover {
+    border: 0; background: #cc0000;
+}
+.con2-2 .txt li:hover a {color: #fff;}
+.con2-2 .txt li a {
+    font-size: 12px;
+}
+
+/*  con2-3  */
+#con2 .con2 .con2-3 {width: 100%; height: 400px;}
+.con2 .con2-3 img {width: 60%; float: left;}
+.con2 .con2-3 .txt {width: 30%; margin-left: 10%; float: left;}
+.con2-3 .txt h1 {
+    font-size: 36px; margin-top: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.con2-3 .txt h2 {
+    font-size: 24px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.con2-3 .txt h3 {font-size: 16px; font-weight: 100; margin-bottom: 30px;}
+.con2-3 .txt p {font-size: 14px; margin-bottom: 5px;}
+.con2-3 .txt li {
+    float: left; margin-top: 40px; text-align: center;
+    width: 150px; height: 40px; line-height: 40px;
+    border: 1px solid #cc0000;
+    transition: all 0.7s;
+}
+.con2-3 .txt li:hover {
+    border: 0; background: #cc0000;
+}
+.con2-3 .txt li:hover a {color: #fff;}
+.con2-3 .txt li a {
+    font-size: 12px;
+}
+
+/*  con2-4  */
+#con2 .con2 .con2-4 {width: 100%; height: 400px;}
+.con2 .con2-4 img {width: 60%; float: left;}
+.con2 .con2-4 .txt {width: 30%; margin-left: 10%; float: left;}
+.con2-4 .txt h1 {
+    font-size: 36px; margin-top: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.con2-4 .txt h2 {
+    font-size: 24px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.con2-4 .txt h3 {font-size: 16px; font-weight: 100; margin-bottom: 30px;}
+.con2-4 .txt p {font-size: 14px; margin-bottom: 5px;}
+.con2-4 .txt li {
+    float: left; margin-top: 40px; text-align: center;
+    width: 150px; height: 40px; line-height: 40px;
+    border: 1px solid #cc0000;
+    transition: all 0.7s;
+}
+.con2-4 .txt li:hover {
+    border: 0; background: #cc0000;
+}
+.con2-4 .txt li:hover a {color: #fff;}
+.con2-4 .txt li a {
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

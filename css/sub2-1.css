@@ -1,0 +1,124 @@
+@charset "utf-8";
+/*     메인컬러 #cc0000 rgb(204,0,0)    */
+/* font 스타일
+font-family: 'Noto Sans KR', sans-serif; 제목, 큰글씨
+font-family: 'Nanum Gothic', sans-serif; 설명, 작은글씨
+*/
+* {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+#sub-key {
+    width: 100%; height: 300px;
+    background: url(../img/product/product-key.png) no-repeat center;
+    background-size: cover;
+}
+#sub-key .keycont {
+    max-width: 1200px;
+    padding-top: 100px;
+    text-align: center;
+}
+#sub-key .keycont h1 {
+    color: #fff; font-size: 36px;
+    font-weight: bold;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+#content {}
+/*        컨텐츠 바        */
+#content .con-bar {
+    max-width: 1200px; margin: 0 auto;
+    height: 100px; line-height: 100px;
+    padding-left: 375px;
+    border-bottom: 1px solid #111;
+}
+
+.con-bar ul {}
+.con-bar ul li {
+    float: left; text-align: center;
+    width: 150px; height: 20px;
+}
+.con-bar ul li a {
+    font-size: 16px; font-family: 'Noto Sans KR', sans-serif;
+}
+.con-bar ul li:nth-child(1) a {
+    font-weight: bold;
+    padding-right: 10px;
+}
+.con-bar ul li:nth-child(2) a {
+    padding-right: 10px;
+}
+.con-bar ul li:nth-child(2) a:hover {color: #cc0000;}
+.con-bar ul li:nth-child(3) a:hover {color: #cc0000;}
+
+
+#content .con1-bar {
+    max-width: 1200px; margin: 0 auto;
+    height: 50px; line-height: 50px;
+}
+.con1-bar ul {float: right;}
+.con1-bar ul li {
+    float: left;
+    width: 50px;    
+}
+.con1-bar ul li a {font-size: 12px;}
+.con1-bar ul li a.selected {color: #cc0000;}
+
+
+
+#con1 {margin-bottom: 150px;}
+#con1:after {content: ''; display: block; clear: both;}
+#con1 .con1 {max-width: 1200px;}
+.con1 .box {width: 24%; float: left; transition: all 0.5s;}
+.con1 .box:hover {transform: scale(1.1);}
+.con1 .box:nth-child(2) {margin-left: 1.333%;}
+.con1 .box:nth-child(3) {margin-left: 1.333%;}
+.con1 .box:nth-child(4) {margin-left: 1.333%;}
+.con1 .box:nth-child(6) {margin-left: 1.333%;}
+.con1 .box:nth-child(7) {margin-left: 1.333%;}
+.con1 .box:nth-child(8) {margin-left: 1.333%;}
+.con1 .box:nth-child(10) {margin-left: 1.333%;}
+.con1 .box:nth-child(11) {margin-left: 1.333%;}
+.con1 .box:nth-child(12) {margin-left: 1.333%;}
+.con1 .box:nth-child(14) {margin-left: 1.333%;}
+.con1 .box:nth-child(15) {margin-left: 1.333%;}
+.con1 .box:nth-child(16) {margin-left: 1.333%;}
+.con1 .box img {width: 100%;}
+.con1 .box .txt {height: 100px; margin-top: 20px;}
+.box .txt h1 {width: 80%; float: left; font-size: 24px;}
+.box .txt p {
+    width: 20%; float: left; font-size: 12px;
+    text-align: right;
+}
+.box .txt p i {margin: 5px 0 0 5px; color: #cc0000; }
+.box .txt h2 {
+    width: 100%; float: left; font-size: 16px;
+    color: #cc0000; margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
