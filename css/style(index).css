@@ -78,7 +78,8 @@ font-family: 'Nanum Gothic', sans-serif; 설명, 작은글씨
     height: 120px;
 }
 .nav_m_header .m1 img {
-    position: absolute; left: 50%; top: 30px; transform: translateX(-50%);
+    position: absolute; left: 50%; top: 10px; 
+    transform: translateX(-50%);
     width: 100px; 
 }
 .nav_m_header .m1 .close-btn {
@@ -102,7 +103,7 @@ font-family: 'Nanum Gothic', sans-serif; 설명, 작은글씨
 .nav_m_header .m3 li a {
     font-size: 36px; font-family: 'Noto Sans KR', sans-serif;
 }
-.nav_m_header .m4 {float: right; margin-top: 100px; margin-right: 10%;}
+.nav_m_header .m4 {float: right; margin-top: 80px; margin-right: 10%;}
 .nav_m_header .m4 img {width: 30px;}
 .nav_m_header .m4 img:nth-child(1) {margin-right: 20px;}
 
@@ -896,7 +897,7 @@ font-family: 'Nanum Gothic', sans-serif; 설명, 작은글씨
     .content .content4 div:nth-child(4) {margin-left: 5%;}
     
     .content4 div img:nth-child(3) {float: left; width: 60px;}
-    .content4 div h2 {font-size: 18px; padding: 20px 0;}
+    .content4 div h2 {font-size: 16px; padding: 20px 0;}
     .content4 div p:nth-child(4) {
         font-size: 12px; margin: 5px 0 10px 0px;
     }
@@ -1011,7 +1012,7 @@ font-family: 'Nanum Gothic', sans-serif; 설명, 작은글씨
      
 }
     #header .nav_m img {
-    position: absolute; top: 15px; left: 50%;
+    position: absolute; top: 10px; left: 50%;
     width: 80px;
     transform: translate(-50%, 0%);
     }
