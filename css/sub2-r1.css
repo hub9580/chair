@@ -52,8 +52,12 @@ font-family: 'Nanum Gothic', sans-serif; 설명, 작은글씨
 .main-form p:nth-child(5) {
     font-size: 14px; margin-bottom: 50px; padding-top: 20px;
     border-top: 2px solid #eee;
+    line-height: 40px;
 }
-.main-form form {border-bottom: 2px solid #eee; padding-bottom: 70px;}
+.main-form form {
+    border-bottom: 2px solid #eee; 
+    padding-bottom: 70px;
+}
 .main-form form select {
     width: 50%; height: 40px; float: left;
     text-indent: 10px; font-size: 12px;
@@ -61,7 +65,6 @@ font-family: 'Nanum Gothic', sans-serif; 설명, 작은글씨
 .main-form form select option {height: 40px;}
 
 .main-form form select:nth-child(1) {
-    
 }
 .main-form form select:nth-child(1) option {}
 .main-form form select:nth-child(2) {
@@ -70,7 +73,7 @@ font-family: 'Nanum Gothic', sans-serif; 설명, 작은글씨
 
 .main-form li {
     width: 45%; height: 50px; line-height: 50px;
-    float: left; text-align: center; margin-top: 100px;
+    float: left; text-align: center; margin-top: 50px;
 }
 .main-form li:nth-child(7) {background: #cc0000;}
 .main-form li:nth-child(8) {background: #555; margin-left: 10%;}
@@ -108,7 +111,10 @@ font-family: 'Nanum Gothic', sans-serif; 설명, 작은글씨
 }
 #sub-product .con1 h2 {
     font-size: 18px; font-weight: 100;
-    margin-bottom: 150px;
+    margin-bottom: 150px; line-height: 40px;
+}
+#sub-product .con1 h2 strong {
+    color: #94a6ba; font-size: 36px;
 }
 
 /*   상품상세설명2   */
@@ -127,8 +133,12 @@ font-family: 'Nanum Gothic', sans-serif; 설명, 작은글씨
     font-size: 24px; margin-top: 50px; margin-bottom: 20px;
 }
 #sub-product .con3 p {
+    width: 600px; text-align: left;
     font-size: 18px; font-weight: 100;
-    margin-bottom: 150px;
+    margin-bottom: 150px; line-height: 40px;
+}
+#sub-product .con3 p strong {
+    font-size: 36px; color: #94a6ba;
 }
 
 /*   상품상세설명4   */
@@ -142,8 +152,12 @@ font-family: 'Nanum Gothic', sans-serif; 설명, 작은글씨
     font-size: 24px; margin-top: 50px; margin-bottom: 20px;
 }
 #sub-product .con4-txt p {
+    width: 700px; text-align: left;
     font-size: 18px; font-weight: 100;
-    margin-bottom: 150px;
+    margin-bottom: 150px; line-height: 50px;
+}
+#sub-product .con4-txt p strong {
+    font-size: 36px; color: #94a6ba;
 }
 
 /*   상품상세설명5   */
@@ -162,7 +176,7 @@ font-family: 'Nanum Gothic', sans-serif; 설명, 작은글씨
     margin-bottom: 50px;
 }
 #sub-product .con5-txt p {
-    font-size: 14px; font-weight: 100;
+    font-size: 16px; font-weight: 100;
     margin-bottom: 70px;
 }
 #sub-product .con5-tip {
@@ -171,7 +185,7 @@ font-family: 'Nanum Gothic', sans-serif; 설명, 작은글씨
     text-align: left; padding: 30px 0 0 30px;
 }
 #sub-product .con5-tip h2 {font-size: 20px; margin-bottom: 20px;}
-#sub-product .con5-tip p {font-size: 14px;}
+#sub-product .con5-tip p {font-size: 16px;}
 
 /*   상품상세설명 interior   */
 #sub-product .interior {
@@ -186,14 +200,79 @@ font-family: 'Nanum Gothic', sans-serif; 설명, 작은글씨
     width: 100%; margin-bottom: 50px;
 }
 #sub-product .interior p {
-    font-size: 14px; margin-bottom: 100px;
+    font-size: 16px; margin-bottom: 100px;
 }
 
 /*   상품상세설명 주의사항   */
-.preca {}
+.preca {max-width: 1200px; margin: 0 auto;}
+.preca .preca-txt {
+    width: 100%; 
+    border-bottom: 3px solid #eee;
+    padding-bottom: 50px;
+    margin-bottom: 100px;
+}
+.preca .preca-txt h1 {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 46px;
+}
+
+
+/*    배송관련1   */
+.preca .delivery1 {width: 100%; }
+.preca .delivery1 h2 {
+    width: 100%; background: #f8f5f0;
+    padding: 50px 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.preca .delivery1 img {width: 100%;}
+
+/*    배송관련2   */
+.preca .delivery2 {width: 100%; margin-top: 100px;}
+.preca .delivery2 h2 {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 36px; color: #f6f6f6;
+    width: 100%; padding: 50px 0;
+    background: #796d61;
+}
+.preca .delivery2 .delivery-txt {
+    width: 100%; 
+    background: #e6d9c6;
+    padding: 5% 10%;
+    text-align: left;
+}
+.delivery-txt h3 {font-size: 24px; margin-bottom: 20px;}
+.delivery-txt p {
+    font-size: 18px; color: #555; opacity: 0.8;
+    margin-bottom: 50px;
+    margin-left: 100px;
+}
+
+/*    배송관련3   */
+.preca .delivery3 {width: 100%; margin-top: 100px;}
+.preca .delivery3 h2 {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 36px; color: #f6f6f6;
+    width: 100%; padding: 50px 0;
+    background: #796d61;
+}
+.preca .delivery3 .delivery-txt {
+    width: 100%; 
+    background: #e6d9c6;
+    padding: 5% 10%;
+    text-align: left;
+}
+.delivery-txt h3 {font-size: 24px; margin-bottom: 20px;}
+.delivery-txt p {
+    font-size: 18px; color: #555; opacity: 0.8;
+    margin-bottom: 50px;
+    margin-left: 100px;
+}
+
+
+
 /*    주의사항1   */
 .preca1 {
-    width: 100%; height: 400px;
+    width: 100%; height: 400px; margin-top: 100px;
     text-align: left; font-size: 14px;   
 }
 .preca1 h1 {

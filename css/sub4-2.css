@@ -1,0 +1,174 @@
+@charset "utf-8";
+/*     메인컬러 #cc0000 rgb(204,0,0)    */
+/* font 스타일
+font-family: 'Noto Sans KR', sans-serif; 제목, 큰글씨
+font-family: 'Nanum Gothic', sans-serif; 설명, 작은글씨
+*/
+* {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+#wrap {max-width: 1920px; margin: 0 auto;}
+
+
+#sub-key {
+    display: none;
+    width: 100%; height: 300px;
+    background: url(../img/chair/brand-key.png) center no-repeat ;
+    background-size: cover;
+}
+#sub-key .keycont {
+    max-width: 1200px;
+    padding-top: 100px;
+}
+#sub-key .keycont h1 {
+    color: #fff; font-size: 24px;
+    font-weight: bold;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#content {
+    position: relative;
+    max-width: 1200px; margin: 0 auto;
+    text-align: center; margin-top: 150px;
+}
+#content h1 {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 36px; margin-bottom: 20px;
+}
+#content>h2 {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px; margin-bottom: 50px;
+    font-weight: 100;
+}
+#content .con-bar {
+    position: absolute; left: 0; top: 0;
+    width: 200px; height: 300px; 
+    border: 1px solid #dedede; text-align: left;
+    padding: 30px 0 0 30px;
+}
+.con-bar h2 {font-size: 24px; margin-bottom: 0px;}
+.con-bar ul { padding-top: 20px;}
+.con-bar ul li {padding-top: 20px;}
+.con-bar ul li a {font-size: 14px;}
+.con-bar ul li:nth-child(2) a {color: #cc0000;}
+
+
+
+.notice {
+    width: 750px; _height: 1500px; margin-bottom: 200px;
+    _background: #eee;
+}
+
+/*       검색바      */
+.notice .search {
+    width: 100%; height: 150px;
+    _border: 2px solid #555;
+    padding-top:30px;
+    margin-bottom: 50px;
+}
+.notice .search form input[type="text"] {
+    width:60%; height: 50px;
+    border: 3px solid #cc0000;
+    font-size: 18px; text-indent: 18px;
+}
+.notice .search form i {
+    font-size: 30px; margin-left: 20px; 
+}
+.notice .search .search-txt {
+    width: 60%; height: 50px; line-height: 50px;
+}
+.search-txt p {
+    float: left; margin-left: 25px;
+    font-size: 14px; font-weight: bold;
+}
+
+/*       검색네비      */
+.notice .search-nav {width: 100%; height: 50px;}
+.search-nav ul {}
+.search-nav ul li {
+    float: left;
+    width: 19.6%; height: 40px; line-height: 40px;
+    border: 1px solid #dedede;
+}
+
+.search-nav ul li.selected {border: 1px solid #cc0000;}
+.search-nav ul li.selected a {color: #cc0000;}
+
+.search-nav ul li:nth-child(2) {margin-left: 0.5%;}
+.search-nav ul li:nth-child(3) {margin-left: 0.5%;}
+.search-nav ul li:nth-child(4) {margin-left: 0.5%;}
+.search-nav ul li:nth-child(5) {margin-left: 0.5%;}
+.search-nav ul li a {
+    font-size: 14px; padding: 10px 20px;
+} 
+
+
+
+
+.notice .title {
+    width: 100%; height: 30px; line-height: 30px;
+    background: #eee; 
+    border-top: 2px solid #dedede;
+    border-bottom: 1px solid #dedede;
+}
+.notice .title li {
+    float: left; opacity: 0.7;
+    font-size: 12px; font-weight: bold;
+}
+.notice .title li:nth-child(1) {
+    width: 20%; text-align: center;
+}
+.notice .title li:nth-child(2) {width: 60%;}
+
+
+
+
+.notice .fre-box ul {
+    height: 70px; padding-top: 25px;
+    border-bottom: 1px solid #eee;
+    transition: all 1s;
+    cursor: pointer;
+}
+.notice .fre-box ul:hover {background: #eee;}
+.notice .fre-box ul li {float: left; font-size: 14px;}
+.notice .fre-box ul li:nth-child(1) {
+    width: 20%; text-align: center;
+}
+.notice .fre-box ul li:nth-child(2) {
+    width: 60%; text-align: left;
+}
+.notice .fre-box ul li:nth-child(3) {
+    width: 20%; text-align: right; 
+    padding: 0px 10px 0px 0;
+    cursor: pointer;
+    
+}
+.notice .fre-box ul li:nth-child(3) img {
+    transition: all 0.7s;
+}
+.notice .fre-box ul li:nth-child(3) img.on{
+    transform: rotate(180deg);
+    transition: all 0.7s;
+}
+
+
+
+.notice .fre-box .fre-box-con {
+    display: none; text-align: left;
+    width: 100%; _height: 150px;
+    padding:15% 10%; 
+    background: #eee;
+}
+.notice .fre-box .fre-box-con p {
+    font-size: 12px; 
+}
+
+.notice .fre-box .fre-box-con .on {display: block;}
+
+
+
+
+
+
+
+

@@ -65,7 +65,7 @@ font-family: 'Nanum Gothic', sans-serif; 설명, 작은글씨
     text-align: center;
 }
 .nav ul li:hover {
-    background: rgba(119,119,119,0.7); 
+    background: rgba(119,119,119,0.2); 
     transition: all 0.5s;
 }
 .nav ul li:hover .nav_sub {display: block; }
@@ -85,7 +85,7 @@ font-family: 'Nanum Gothic', sans-serif; 설명, 작은글씨
     z-index: 1;
 }
 .nav ul li .nav_sub li {
-    background: rgba(119,119,119,0.7); 
+    background: rgba(119,119,119,0.3); 
      transition: all 0.6s;
 }
 .nav ul li .nav_sub li:hover {

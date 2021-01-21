@@ -1,0 +1,229 @@
+@charset "utf-8";
+/*     메인컬러 #cc0000 rgb(204,0,0)    */
+/* font 스타일
+font-family: 'Noto Sans KR', sans-serif; 제목, 큰글씨
+font-family: 'Nanum Gothic', sans-serif; 설명, 작은글씨
+*/
+* {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+#wrap {max-width: 1920px; margin: 0 auto;}
+
+
+#sub-key {
+    display: none;
+    width: 100%; height: 300px;
+    background: url(../img/chair/brand-key.png) center no-repeat ;
+    background-size: cover;
+}
+#sub-key .keycont {
+    max-width: 1200px;
+    padding-top: 100px;
+}
+#sub-key .keycont h1 {
+    color: #fff; font-size: 24px;
+    font-weight: bold;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#content {
+    position: relative;
+    max-width: 1200px; margin: 0 auto;
+    text-align: center; margin-top: 150px;
+}
+#content h1 {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 36px; margin-bottom: 50px;
+}
+#content .con-bar {
+    position: absolute; left: 0; top: 0;
+    width: 200px; height: 300px; 
+    border: 1px solid #dedede; text-align: left;
+    padding: 30px 0 0 30px;
+}
+.con-bar h2 {font-size: 24px;}
+.con-bar ul { padding-top: 20px;}
+.con-bar ul li {padding-top: 20px;}
+.con-bar ul li a {font-size: 14px;}
+.con-bar ul li:nth-child(3) a {color: #cc0000;}
+
+
+#after {
+    width: 750px; 
+    background: #fff;
+}
+#after-bar {
+    width: 100%; height: 100px;
+}
+#after-bar ul {}
+#after-bar ul li {
+    width: 24%; height: 40px; line-height: 40px;
+    border: 1px solid #dedede;
+    float: left; margin-left: 1%; 
+}
+#after-bar ul li.selected {border: 1px solid #cc0000;}
+#after-bar ul li.selected a {color: #cc0000;}
+#after-bar ul li a {
+    font-size: 14px; padding: 10px 50px;
+}
+#after-btn {
+    width: 100%; height: 200px; 
+    padding-left: 150px; padding-top: 50px;
+}
+#after-btn li {
+    float: left; line-height: 50px;
+    width: 200px; height: 50px;
+}
+#after-btn li:nth-child(1) {background: #cc0000;}
+#after-btn li:nth-child(2) {background: #555; margin-left: 50px;}
+#after-btn li a {color: #f6f6f6; font-size: 14px;}
+
+
+#con1 {width: 100%; _background: #eee;}
+#con1 .con1-txt {
+    padding: 0 50px 50px 50px;
+    text-align: left;
+}
+#con1 .con1-txt h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+#con1 .con1-txt p {
+    font-size: 14px; color: #555; opacity: 0.8;
+    margin-bottom: 50px;
+}
+
+
+#con2 {width: 100%; _background: #dee;}
+#con2 i {padding-top: 30px; font-size: 30px; color: #e6d9c6;}
+#con2 p {color: #555; opacity: 0.8;}
+#con2 h5 {color: #333; opacity: 0.9;}
+#con2 .con2-1 {height: 400px;}
+#con2 .con2-1 h4 {text-align: left; margin-bottom: 20px;}
+#con2 .con2-1 .box1 {
+    float: left; 
+    width: 30%; height: 300px;
+    border: 2px solid #eee;
+}
+#con2 .con2-1 .box1 h5 {font-size: 24px; margin-top: 20px;}
+#con2 .con2-1 .box1 p {font-size: 16px; margin-top: 50px;}
+#con2 .con2-1 .box2 {
+    float: left; 
+    width: 30%; height: 300px;
+    border: 2px solid #eee;
+}
+#con2 .con2-1 .box2 h5 {font-size: 24px; margin-top: 20px;}
+#con2 .con2-1 .box2 p {font-size: 16px; margin-top: 50px;}
+#con2 .con2-1 .box3 {
+    float: left;
+    width: 30%; height: 300px;
+    border: 2px solid #eee;
+}
+#con2 .con2-1 .box3 h5 {font-size: 24px; margin-top: 20px;}
+#con2 .con2-1 .box3 p {font-size: 14px; margin-top: 20px;}
+#con2 .con2-1 .box3 p:nth-child(3) {font-size: 14px; margin-top: 20px;}
+#con2 .con2-1 .plus {
+    float: left; 
+    width: 5%; height: 300px; line-height: 300px;
+}
+
+#con2 .con2-2 {height: 400px;}
+#con2 .con2-2 h4 {
+    text-align: left; margin-bottom: 20px;
+}
+#con2 .con2-2 .box1 {
+    float: left;
+    width: 30%; height: 300px;
+    border: 2px solid #eee;
+}
+#con2 .con2-2 .box1 h5 {font-size: 24px; margin-top: 20px;}
+#con2 .con2-2 .box1 p {font-size: 16px; margin-top: 50px;}
+#con2 .con2-2 .box2 {
+    float: left;
+    width: 30%; height: 300px;
+    border: 2px solid #eee;
+}
+#con2 .con2-2 .box2 h5 {font-size: 24px; margin-top: 20px;}
+#con2 .con2-2 .box2 p {font-size: 16px; margin-top: 50px;}
+#con2 .con2-2 .plus {
+    float: left; 
+    width: 5%; height: 300px; line-height: 300px;
+}
+
+
+#con3 {width: 100%; }
+#con3 .box1 {
+    width: 100%; height: 100px; line-height: 100px;
+    border: 1px solid #555; margin-bottom: 10px;
+}
+#con3 .box1 p {text-align: left; margin-left: 50px;}
+#con3 .box1 p strong {color: #cc0000; margin-right: 280px;}
+#con3 .box2 {
+    width: 100%; height: 100px; line-height: 100px;
+    border: 1px solid #555; 
+    margin-bottom: 10px; margin-top: 10px;
+}
+#con3 .box2 p {text-align: left; margin-left: 50px;}
+#con3 .box2 p strong {color: #cc0000; margin-right: 260px;}
+#con3 .box3 {
+    width: 100%; height: 100px; line-height: 100px;
+    border: 1px solid #555; 
+    margin-bottom: 10px; margin-top: 10px;
+}
+#con3 .box3 p {text-align: left; margin-left: 50px;}
+#con3 .box3 p strong {color: #cc0000; margin-right: 210px;}
+#con3 .box4 {
+    width: 100%; height: 100px; line-height: 100px;
+    border: 1px solid #555; 
+    margin-bottom: 10px; margin-top: 10px;
+}
+#con3 .box4 p {text-align: left; margin-left: 50px;}
+#con3 .box4 p strong {color: #cc0000; margin-right: 270px;}
+#con3 .box5 {
+    width: 100%; height: 100px; line-height: 100px;
+    border: 1px solid #555; margin-top: 10px;
+}
+#con3 .box5 p {text-align: left; margin-left: 50px;}
+#con3 .box5 p strong {color: #cc0000; margin-right: 200px;}
+
+
+#con4 {width: 100%; }
+#con4 .con4-txt {
+    padding: 0 50px 50px 50px;
+    text-align: left;
+}
+#con4 .con4-txt h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+#con4 .con4-txt p {color: #555; opacity: 0.8;}
+#con4 .con4-txt p:nth-child(2) {
+    font-size: 18px; font-weight: bold;
+    margin-bottom: 30px;
+}
+#con4 .con4-txt p:nth-child(2) strong {
+    color: #cc0000; font-size: 20px;
+}
+#con4 .con4-txt p:nth-child(3) {
+    font-size: 14px; line-height: 25px;
+    margin-bottom: 50px;
+}
+#con4 .con4-txt p:nth-child(5) {margin-bottom: 20px;}
+#con4 .con4-txt p:nth-child(6) {margin-bottom: 20px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

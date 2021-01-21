@@ -19,7 +19,7 @@ font-family: 'Nanum Gothic', sans-serif; 설명, 작은글씨
     text-align: center;
 }
 #sub-key .keycont h1 {
-    color: #fff; font-size: 36px;
+    color: #fff; font-size: 46px;
     font-weight: bold;
     font-family: 'Noto Sans KR', sans-serif;
 }
@@ -71,8 +71,15 @@ font-family: 'Nanum Gothic', sans-serif; 설명, 작은글씨
 #con1 {margin-bottom: 150px;}
 #con1:after {content: ''; display: block; clear: both;}
 #con1 .con1 {max-width: 1200px;}
-.con1 .box {width: 24%; float: left; transition: all 0.5s;}
-.con1 .box:hover {transform: scale(1.1);}
+.con1 .box {
+    width: 24%; float: left; transition: all 0.5s;
+    background: #fff;
+}
+.con1 .box:hover {
+    transform: scale(1.15); border: 1px solid #555;
+    padding: 15px;
+}
+
 .con1 .box:nth-child(2) {margin-left: 1.333%;}
 .con1 .box:nth-child(3) {margin-left: 1.333%;}
 .con1 .box:nth-child(4) {margin-left: 1.333%;}
@@ -86,7 +93,9 @@ font-family: 'Nanum Gothic', sans-serif; 설명, 작은글씨
 .con1 .box:nth-child(15) {margin-left: 1.333%;}
 .con1 .box:nth-child(16) {margin-left: 1.333%;}
 .con1 .box img {width: 100%;}
-.con1 .box .txt {height: 100px; margin-top: 20px;}
+.con1 .box .txt {
+    height: 150px; padding-top: 20px; 
+}
 .box .txt h1 {width: 80%; float: left; font-size: 24px;}
 .box .txt p {
     width: 20%; float: left; font-size: 12px;

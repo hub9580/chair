@@ -1,0 +1,127 @@
+@charset "utf-8";
+/*     메인컬러 #cc0000 rgb(204,0,0)    */
+/* font 스타일
+font-family: 'Noto Sans KR', sans-serif; 제목, 큰글씨
+font-family: 'Nanum Gothic', sans-serif; 설명, 작은글씨
+*/
+* {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+#wrap {max-width: 1920px; margin: 0 auto;}
+
+
+#sub-key {
+    display: none;
+    width: 100%; height: 300px;
+    background: url(../img/chair/brand-key.png) center no-repeat ;
+    background-size: cover;
+}
+#sub-key .keycont {
+    max-width: 1200px;
+    padding-top: 100px;
+}
+#sub-key .keycont h1 {
+    color: #fff; font-size: 24px;
+    font-weight: bold;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#content {
+    position: relative;
+    max-width: 1200px; margin: 0 auto;
+    text-align: center; margin-top: 150px;
+}
+#content h1 {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 36px; margin-bottom: 10px;
+}
+#content>p {font-size: 20px;}
+#content .con-bar {
+    position: absolute; left: 0; top: 0;
+    width: 200px; height: 300px; 
+    border: 1px solid #dedede; text-align: left;
+    padding: 30px 0 0 30px;
+}
+.con-bar h2 {font-size: 24px;}
+.con-bar ul { padding-top: 20px;}
+.con-bar ul li {padding-top: 20px;}
+.con-bar ul li a {font-size: 14px;}
+.con-bar ul li:nth-child(4) a {color: #cc0000;}
+
+
+
+.question {
+    width: 750px; height: 1000px;
+    margin-top: 50px;
+    _background: #eee;
+}
+.question .q-box1 {
+    float: left;
+    width: 47%; height: 200px;
+    border: 2px solid #dedede; 
+    padding-top: 60px;
+}
+.question .q-box1:hover i {opacity: 0.5;}
+.question .q-box1:hover p {opacity: 0.5;}
+.question .q-box1 i {font-size: 36px; margin-bottom: 10px;}
+.question .q-box1 p {font-size: 18px; font-weight: bold;}
+.question .q-box2 {
+    float: left; margin-left: 5%;
+    width: 47%; height: 200px;
+    border: 2px solid #dedede;
+    padding-top: 60px;
+}
+.question .q-box2:hover i {opacity: 0.5;}
+.question .q-box2:hover p {opacity: 0.5;}
+.question .q-box2 i {font-size: 36px; margin-bottom: 10px;}
+.question .q-box2 p {font-size: 18px; font-weight: bold;}
+
+
+
+.question .q-txt {
+    width: 100%; text-align: left; 
+    float: left; margin-top: 50px; margin-bottom: 100px;
+}
+.question .q-txt p:nth-child(1) {
+    width: 100%; border-bottom: 2px solid #eee;
+    padding-bottom: 20px; margin-bottom: 50px;
+} 
+.question .q-txt h5 {
+    font-size: 20px; margin-bottom: 20px;
+} 
+.question .q-txt p:nth-child(3) {
+    font-size: 14px; 
+    margin-bottom: 50px; line-height: 50px;
+} 
+.question .q-txt p:nth-child(3) strong {
+    color: #cc0000; font-size: 16px; 
+    padding: 5px 10px; margin-right: 20px;
+    border-radius: 3px; 
+    border: 1px solid #555;
+} 
+
+#q-btn {
+    width: 100%; height: 200px; 
+    padding-left: 150px; padding-top: 50px;
+}
+#q-btn li {
+    float: left; line-height: 50px;
+    width: 200px; height: 50px;
+}
+#q-btn li:nth-child(1) {background: #cc0000;}
+#q-btn li:nth-child(2) {background: #555; margin-left: 50px;}
+#q-btn li a {color: #f6f6f6; font-size: 14px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

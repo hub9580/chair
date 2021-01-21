@@ -14,11 +14,11 @@ font-family: 'Nanum Gothic', sans-serif; 설명, 작은글씨
     background-size: cover;
 }
 #sub-key .keycont {
-    max-width: 1200px;
-    padding-top: 100px;
+    max-width: 1200px; margin: 0 auto;
+    padding-top: 120px; text-align: center;
 }
 #sub-key .keycont h1 {
-    font-size: 24px;
+    font-size: 46px; color: #fff;
     font-weight: bold;
     font-family: 'Noto Sans KR', sans-serif;
 }
@@ -27,51 +27,68 @@ font-family: 'Nanum Gothic', sans-serif; 설명, 작은글씨
 /*        컨텐츠 바        */
 #content .con-bar {
     max-width: 1200px; margin: 0 auto;
-    height: 100px; line-height: 100px;
+    height: 100px; 
+    border-bottom: 1px solid #555;
 }
 .con-bar p {
-    float: left;
+    float: left; padding-top: 50px;
     font-size: 24px; font-weight: bold;
     font-family: 'Noto Sans KR', sans-serif;
 }
-.con-bar ul {float: right;}
+.con-bar ul {float: right; padding-top: 65px;}
 .con-bar ul li {
     float: left;
-    width: 100px; height: 20px;
 }
 .con-bar ul li a {
     font-size: 14px;
 }
-.con-bar ul li:nth-child(1) a {
-    
+.con-bar ul li:nth-child(1) a { 
     border-right: 2px solid #111;
-    padding-right: 10px;
+    padding-right: 20px;
 }
 .con-bar ul li:nth-child(2) a {
-    font-weight: bold;
+    font-weight: bold; color: #cc0000;
     border-right: 2px solid #111;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.con-bar ul li:nth-child(3) a {
+    padding-left: 20px;
 }
 
 /*        컨텐츠 1        */
 #content #con1 {margin-top: 100px;}
 #con1 .con1 {
+    position: relative;
     max-width: 1200px; margin: 0 auto;
     text-align: center;
 }
-.con1 img {width: 100%;}
 .con1 h1 {
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 36px; margin-bottom: 20px;
 }
-.con1 p {
-    font-size: 14px;
-}
 .con1 p:nth-child(2) {
-    margin-bottom: 50px;
+    position: absolute; right: 50px; top: 200px;
+    text-align: left;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px; color: #555;
+}
+.con1 p:nth-child(2) strong {
+    color: #cc0000; font-size: 24px;
+}
+
+
+.con1 img {width: 100%;}
+
+.con1 p {
+    font-size: 16px;
 }
 .con1 p:nth-child(4) {
-    margin: 50px 0 100px 0;
+    width: 700px; height: 150px;
+    text-align: left;
+    border-left: 2px solid #cc0000;
+    padding: 20px 0 0px 50px;
+    margin: 50px 0 100px 300px;
 }
 
 /*        컨텐츠 2        */

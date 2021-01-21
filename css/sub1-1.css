@@ -16,10 +16,10 @@ font-family: 'Nanum Gothic', sans-serif; 설명, 작은글씨
 }
 #sub-key .keycont {
     max-width: 1200px;
-    padding-top: 100px;
+    padding-top: 120px; text-align: center;
 }
 #sub-key .keycont h1 {
-    color: #fff; font-size: 24px;
+    font-size: 46px; color: #fff;  
     font-weight: bold;
     font-family: 'Noto Sans KR', sans-serif;
 }
@@ -29,34 +29,39 @@ font-family: 'Nanum Gothic', sans-serif; 설명, 작은글씨
 /*        컨텐츠 바        */
 #content .con-bar {
     max-width: 1200px;
-    height: 100px; line-height: 100px;
+    height: 100px; 
+    _border-bottom: 1px solid #555;
 }
 .con-bar p {
-    float: left;
+    float: left; padding-top: 50px;
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 24px; font-weight: bold;
 }
-.con-bar ul {float: right;}
+.con-bar ul {float: right; padding-top: 65px;}
 .con-bar ul li {
     float: left;
-    width: 100px; height: 20px;
 }
 .con-bar ul li a {
     font-size: 14px;
+    
 }
 .con-bar ul li:nth-child(1) a {
-    font-weight: bold;
+    font-weight: bold; color: #cc0000;
     border-right: 2px solid #111;
-    padding-right: 10px;
+    padding-right: 20px;
 }
 .con-bar ul li:nth-child(2) a {
     border-right: 2px solid #111;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.con-bar ul li:nth-child(3) a {
+    padding-left: 20px;
 }
 
 /*        컨텐츠1 라운드        */
 #content #con1 {
-    width: 100%; height: 500px;
+    width: 100%; height: 600px;
     background: rgba(250,250,250,1);
         
 }
@@ -83,11 +88,11 @@ font-family: 'Nanum Gothic', sans-serif; 설명, 작은글씨
 }
 
 /*        컨텐츠2 텍스트        */
-#content #con2 {margin-top: 100px;}
+#content #con2 {margin-top: 50px;}
 #con2 .con2 {max-width: 1200px;}
 .con2 .txt {
     width: 100%; height: 100px;
-    padding-top: 30px;
+    padding-top: 20px;
     border-bottom: 2px solid #eee;
 
 }
@@ -114,7 +119,7 @@ font-family: 'Nanum Gothic', sans-serif; 설명, 작은글씨
     font-size: 36px;
 }
 #con3 .con3 p {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     font-size: 14px;
 }
 #con3 .con3 img {
@@ -125,7 +130,7 @@ font-family: 'Nanum Gothic', sans-serif; 설명, 작은글씨
 
 /*        컨텐츠4 라운드2        */
 #content #con4 {
-    width: 100%; height: 500px;
+    width: 100%; height: 600px;
     background: rgba(250,250,250,1);
         
 }
@@ -157,7 +162,7 @@ font-family: 'Nanum Gothic', sans-serif; 설명, 작은글씨
 #content #con5 {
     width: 100%;
     background: #eee;
-    margin-top: 100px;
+    margin-top: 0px;
 }
 #con5 .con5 {
     max-width: 1200px; text-align: center;
@@ -169,7 +174,7 @@ font-family: 'Nanum Gothic', sans-serif; 설명, 작은글씨
     font-size: 36px;
 }
 #con5 .con5 p {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     font-size: 14px;
 }
 #con5 .con5 img {
@@ -177,7 +182,7 @@ font-family: 'Nanum Gothic', sans-serif; 설명, 작은글씨
 }
 
 /*        컨텐츠6 텍스트        */
-#content #con6 {margin-top: 100px; margin-bottom: 100px;}
+#content #con6 {margin-top: 50px; margin-bottom: 100px;}
 #con6 .con6 {max-width: 1200px;}
 .con6 .txt {
     width: 100%; height: 100px;
